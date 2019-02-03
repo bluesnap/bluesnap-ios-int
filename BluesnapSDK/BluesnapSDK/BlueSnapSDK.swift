@@ -51,6 +51,7 @@ import PassKit
         
             if let error = error {
                 NSLog("Failed to fetch data for Bluesnap SDK. error: \(error)")
+		completion(error)
                 return
             }
             
