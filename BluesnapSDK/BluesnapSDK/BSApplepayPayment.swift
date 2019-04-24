@@ -43,11 +43,11 @@ extension PKPaymentMethodType: CustomStringConvertible {
 
 public class BSApplePayInfo
 {
-    public var tokenPaymentNetwork: String!
-    public var tokenPaymentNetworkType: String!
-    public var token: PKPaymentToken!
-    public var tokenInstrumentName:String!
-    public var transactionId: String!
+    public var tokenPaymentNetwork: String?
+    public var tokenPaymentNetworkType: String
+    public var token: PKPaymentToken
+    public var tokenInstrumentName:String?
+    public var transactionId: String
     public let payment: PKPayment
     public var billingContact: PKContact?
     public var shippingContact: PKContact?
