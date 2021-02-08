@@ -369,4 +369,17 @@ extension XCUIElement {
         }
         self.typeText(deleteString)
     }
+    
+    func typeNewText(_ text: String) {
+        tap()
+        if let existingText = value as? String, !existingText.isEmpty {
+          if existingText != text {
+            doubleTap()
+          } else {
+            return
+          }
+        }
+
+        typeText(text)
+      }
 }

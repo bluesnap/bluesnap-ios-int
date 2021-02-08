@@ -401,8 +401,9 @@ class BSPaymentScreenUITestHelper: BSCreditCardScreenUITestHelperBase {
             
         else{
             
-            input.clearText()
-            input.typeText(value)
+            input.typeNewText(value)
+//            input.clearText()
+//            input.typeText(value)
             
         }
     }

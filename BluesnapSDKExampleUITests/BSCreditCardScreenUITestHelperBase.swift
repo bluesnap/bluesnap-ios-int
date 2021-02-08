@@ -246,15 +246,16 @@ class BSCreditCardScreenUITestHelperBase {
         
         let textField = getInputFieldElement(input)
         if textField.exists {
-            let oldValue = textField.value as? String ?? ""
-            if oldValue != value {
-                textField.tap()
-                if oldValue.count > 0 {
-                    let deleteString = oldValue.map { _ in "\u{8}" }.joined(separator: "")
-                    textField.typeText(deleteString)
-                }
-                textField.typeText(value)
-            }
+            input.typeNewText(value)
+//            let oldValue = textField.value as? String ?? ""
+//            if oldValue != value {
+//                textField.tap()
+//                if oldValue.count > 0 {
+//                    let deleteString = oldValue.map { _ in "\u{8}" }.joined(separator: "")
+//                    textField.typeText(deleteString)
+//                }
+//                textField.typeText(value)
+//            }
         }
     }
     
