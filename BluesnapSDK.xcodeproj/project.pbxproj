@@ -1376,7 +1376,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/BluesnapSDK",
 				);
-				MARKETING_VERSION = 1.5.1;
+				MARKETING_VERSION = 1.5.3;
 				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = com.bluesnap.BluesnapSDK;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1422,7 +1422,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/BluesnapSDK",
 				);
-				MARKETING_VERSION = 1.5.1;
+				MARKETING_VERSION = 1.5.3;
 				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = com.bluesnap.BluesnapSDK;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1501,7 +1501,7 @@
 				);
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = "$(SRCROOT)/BluesnapSDKExample/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1537,7 +1537,7 @@
 				);
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = "$(SRCROOT)/BluesnapSDKExample/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
