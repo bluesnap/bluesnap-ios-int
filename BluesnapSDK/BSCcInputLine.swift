@@ -308,7 +308,8 @@ public class BSCcInputLine: BSBaseTextInput {
     public func validate() -> Bool {
 
         let ok1 = validateCCN()
-        let ok2 = validateExp(ignoreIfEmpty: false)
+//        let ok2 = validateExp(ignoreIfEmpty: false)
+        let ok2 = true
         let ok3 = validateCvv(ignoreIfEmpty: false)
         let result = ok1 && ok2 && ok3
 
@@ -655,7 +656,7 @@ public class BSCcInputLine: BSBaseTextInput {
                 }
             }
         } else if sender == self.expTextField {
-            _ = validateExp(ignoreIfEmpty: true)
+//            _ = validateExp(ignoreIfEmpty: true)
         } else if sender == self.cvvTextField {
             _ = validateCvv(ignoreIfEmpty: true)
         }
@@ -1014,7 +1015,7 @@ public class BSCcInputLine: BSBaseTextInput {
             DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
                 //self.layoutIfNeeded()
                 if !self.expTextField.isFirstResponder {
-                    _ = self.validateExp(ignoreIfEmpty: true)
+//                    _ = self.validateExp(ignoreIfEmpty: true)
                 }
                 if !self.cvvTextField.isFirstResponder {
                     _ = self.validateCvv(ignoreIfEmpty: true)
